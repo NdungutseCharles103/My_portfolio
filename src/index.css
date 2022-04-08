@@ -43,7 +43,7 @@ body {
 .dark-theme {
     --primary-color: #3e65da;
     --secondary-color: #131313;
-    --third-color: #fff;
+    --third-color: #e7edff;
     --color1: #080f25;
     --forth-color: #3e65da;
 }
@@ -215,14 +215,16 @@ nav .links a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 500px;
+    justify-content: center;
 }
 
-.desript-content {
+.descript-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 15vh;
 }
 
 h2 {
@@ -237,12 +239,8 @@ p {
     font-size: 1.2rem;
 }
 
-span {
-    color: var(--primary-color);
-}
-
 .desc-btn {
-    margin-left: 50px;
+    margin-top: 50px;
     padding: 6px;
     color: var(--secondary-color);
     border: none;
@@ -349,14 +347,9 @@ span {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 400px;
+        width: 100%;
     }
 
-    #social-icons {
-        position: relative;
-        transform: translateY(-150%);
-        max-width: 670px;
-    }
 
     h2 {
         margin-top: -30px;
@@ -582,24 +575,7 @@ h3 {
     #text{
         text-align: center;
     }
-    .social-links {
-        margin-left: 60px;
-        display: flex;
-        position: static;
-        align-items: center;
-    }
-
-    #social-icons {
-        display: flex;
-        transform: translateX(5545px) translateY(-);
-        font-size: 2rem;
-        margin: 20px;
-    }
-
-    .fa-linkedin {
-        margin: 0 !important;
-    }
-
+   
     #me {
         width: 400px;
     }
@@ -612,6 +588,12 @@ h3 {
         margin: auto;
         background: url(Images/back.png);
         background-size: 100%;
+    }
+
+}
+@media screen and (max-width: 340px) {
+    .social-links{
+        transform: scale(0.8);
     }
 
 }
@@ -890,4 +872,11 @@ h1 {
         grid-auto-flow: row;
         grid-auto-columns: 60%;
     }
+}
+.typewrite, .typewriter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0!important;
 }

@@ -1,17 +1,23 @@
 import React from 'react'
+import TypeEffect from './TypeEffect';
+import '../styles/comp.scss';
 
 const Home = () => {
+  
   return (
     <div className="home" id="homes">
       <div className="descript-view">
         <div className="descript-content">
-          <h2 id="text">Hi. I'm Ndungutse Charles</h2>
-          <p id="desc">
+          <div class="typewriter">
+            <h1>Hi. I'm Ndungutse Charles.</h1>
+          </div>
+          <TypeEffect />
+          {/* <p id="desc">
             Software developer, Web developer and Mobile app developer
           </p>
           <p id="desc1">
             at RCA. A person who is interested in learning new things
-          </p>
+          </p> */}
         </div>
         <div className="decript-btn">
           <a href="Images/gettech.png" className="desc-btn" download="gettech">
